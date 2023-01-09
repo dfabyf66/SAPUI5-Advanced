@@ -16,50 +16,11 @@
                 <Button id="btnFilter" text="{i18n>btnFilter}" icon="sap-icon://search" press="onFilter" class="sapUiSmallMarginEnd" />
                 <Button id="btnClearFilter" text="{i18n>btnClearFilter}" icon="sap-icon://clear-filter" press="onClearFilter" class="sapUiSmallMarginEnd" />
             </HBox>
-            <HBox id="_IDGenHBox2">
-                <Panel id="_IDGenPanel1">
+          
+             <core:Fragment fragmentName="dffspaceEmp.employee.fragment.TableEmployee" type="XML"/>
+           <!-- <HBox>
 
-                    <Button id="btnShowCity" text="{i18n>showCity}" visible="{jsonModelConfig>/visibleBtnShowCity}" press="onShowCity"/>
-                    <Button id="btnHideCity" text="{i18n>hideCity}" visible="{jsonModelConfig>/visibleBtnHideCity}" press="onHideCity"/>
-
-                    <Table id="tableEmployee" items="{jsonEmployees>/}">
-                           <columns>
-                                        <Column id="_IDGenColumn1" visible="{jsonModelConfig>/visibleID}"> 
-                                            <header>
-                                                <Label id="_IDGenLabel1" text="{i18n>tableId}"/>
-                                            </header>
-                                        </Column>
-                                        <Column id="_IDGenColumn2" visible="{jsonModelConfig>/visibleName}"> 
-                                            <header>
-                                                <Label id="_IDGenLabel2" text="{i18n>tableName}"/>
-                                            </header>
-                                        </Column>
-                                        <Column id="_IDGenColumn3" visible="{jsonModelConfig>/visibleCountry}"> 
-                                            <header>
-                                                <Label id="_IDGenLabel3" text="{i18n>tableCountry}"/>
-                                            </header>
-                                        </Column>
-                                        <Column id="_IDGenColumn4" visible="{jsonModelConfig>/visibleCity}"> 
-                                            <header>
-                                                <Label id="_IDGenLabel4" text="{i18n>tableCity}"/>
-                                            </header>
-                                    </Column>
-                                    
-                        </columns>
-                        <items>
-                            <ColumnListItem id="_IDGenColumnListItem1" type="Active" press="showOrders">
-                                <cells>
-                                   <Label id="_IDGenLabel5" text="{jsonEmployees>EmployeeID}"/>
-                                                <Label id="_IDGenLabel6" text="{jsonEmployees>LastName}, {jsonEmployees>FirstName}"/>
-                                                <Label id="_IDGenLabel7" text="{jsonEmployees>Country}"/>
-                                                <Label id="_IDGenLabel8" text="{jsonEmployees>City}"/>
-                                </cells>
-                            </ColumnListItem>
-                        </items>
-                    </Table>
-                    <HBox id="ordersTable"></HBox>
-                </Panel>
-            </HBox>
+           </HBox> -->
         </content>
     </Page>
 </mvc:View>
