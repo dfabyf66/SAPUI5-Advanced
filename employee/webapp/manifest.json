@@ -45,6 +45,12 @@
     },
     "sap.ui5": {
         "flexEnabled": true,
+        "rootView": {
+            "viewName": "dffspaceEmp.employee.view.Main",
+            "type": "XML",
+            "async": true,
+            "id": "Main"
+        },
         "dependencies": {
             "minUI5Version": "1.109.3",
             "libs": {
@@ -94,28 +100,29 @@
             },
             "routes": [
                 {
-                    "name": "RouteMainview",
+                    "name": "RouteMain",
                     "pattern": ":?query:",
                     "target": [
-                        "TargetMainview"
+                        "TargetMain"
                     ]
                 }
             ],
             "targets": {
-                "TargetMainview": {
+                "TargetMain": {
                     "viewType": "XML",
                     "transition": "slide",
                     "clearControlAggregation": false,
-                    "viewId": "Mainview",
-                    "viewName": "Mainview"
+                    "viewId": "Main",
+                    "viewName": "Main"
+                },
+                "TargetMasterEmployee": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "clearControlAggregation": false,
+                    "viewId": "MasterEmployee",
+                    "viewName": "MasterEmployee"
                 }
             }
-        },
-        "rootView": {
-            "viewName": "dffspaceEmp.employee.view.App",
-            "type": "XML",
-            "async": true,
-            "id": "App"
         }
     },
     "sap.cloud": {

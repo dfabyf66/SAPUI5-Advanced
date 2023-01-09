@@ -1,7 +1,7 @@
-<mvc:View controllerName="dffspaceEmp.employee.controller.Mainview" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:core="sap.ui.core">
+<mvc:View controllerName="dffspaceEmp.employee.controller.MasterEmployee" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:core="sap.ui.core">
     <Page id="page" title="{i18n>title}">
         <content>
-            <HBox id="_IDGenHBox1">
+            <HBox id="_IDGenHBox1" wrap="Wrap">
                 <Label id="labelEmployee" labelFor="inputEmployee" text="{i18n>labelEmployee}" class="sapUiSmallMargin" />
                 <Input id="inputEmployee" value="{jsonCountries>/EmployeeId}" maxLength="6" width="200px" class="sapUiSmallMarginEnd"/>
                 <Label id="labelCountry" labelFor="slCountry" text="{i18n>labelCountry}" class="sapUiSmallMargin" visible="true" />

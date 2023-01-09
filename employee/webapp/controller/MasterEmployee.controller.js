@@ -114,7 +114,7 @@ sap.ui.define([
 
 
 
-        var Main = Controller.extend("dffspaceEmp.employee.controller.MainView", {});
+        var Main = Controller.extend("dffspaceEmp.employee.controller.MasterEmployee", {});
 
         // return Controller.extend("dffspaceEmp.employee.controller.Mainview", {
         //     onInit: function () {
