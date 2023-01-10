@@ -21,6 +21,10 @@ sap.ui.define([
             oJSONModelLayout.loadData("./localService/mockdata/Layout.json", false);
             oView.setModel(oJSONModelLayout, "jsonLayout");
 
+            var oJSONModelLayout = new sap.ui.model.json.JSONModel();
+            oJSONModelLayout.loadData("./localService/mockdata/Layout.json", false);
+            oView.setModel(oJSONModelLayout, "jsonLayout");
+
             var oJSONModelConfig = new sap.ui.model.json.JSONModel({
                 visibleID: true,
                 visibleName: true,
