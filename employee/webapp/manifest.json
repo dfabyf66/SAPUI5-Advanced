@@ -16,7 +16,7 @@
             "toolsId": "53297adb-503a-4b55-917e-a001ce1256f5"
         },
         "dataSources": {
-            "mainService": {
+            "Northwind.svc": {
                 "uri": "/V2/Northwind/Northwind.svc/",
                 "type": "OData",
                 "settings": {
@@ -75,10 +75,15 @@
                     "bundleName": "dffspaceEmp.employee.i18n.i18n"
                 }
             },
-            "": {
-                "dataSource": "mainService",
+            "odataNorthwind": {
+                "dataSource": "Northwind.svc",
                 "preload": true,
-                "settings": {}
+                "settings": {
+                    "defaultOperationMode": "Server",
+                    "defaultBindingMode": "OneWay",
+                    "defaultCountMode": "Request",
+                    "refreshAfterChange": false
+                }
             }
         },
         "resources": {
