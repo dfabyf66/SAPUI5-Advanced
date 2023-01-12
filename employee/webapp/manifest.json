@@ -55,10 +55,10 @@
     "sap.ui5": {
         "flexEnabled": true,
         "rootView": {
-            "viewName": "dffspaceEmp.employee.view.Main",
+            "viewName": "dffspaceEmp.employee.view.App",
             "type": "XML",
             "async": true,
-            "id": "Main"
+            "id": "app"
         },
         "dependencies": {
             "minUI5Version": "1.109.3",
@@ -128,9 +128,16 @@
             "routes": [
                 {
                     "name": "RouteMain",
-                    "pattern": ":?query:",
+                    "pattern": "",
                     "target": [
                         "TargetMain"
+                    ]
+                },
+                {
+                    "name": "RouteOrderDetails",
+                    "pattern": "OrderDetails/{OrderID}",
+                    "target": [
+                        "TargetOrderDetails"
                     ]
                 }
             ],
@@ -142,12 +149,10 @@
                     "viewId": "Main",
                     "viewName": "Main"
                 },
-                "TargetMasterEmployee": {
-                    "viewType": "XML",
-                    "transition": "slide",
-                    "clearControlAggregation": false,
-                    "viewId": "MasterEmployee",
-                    "viewName": "MasterEmployee"
+                "TargetOrderDetails": {
+                    "viewId": "OrderDetails",
+                    "viewType": "XML",                    
+                    "viewName": "OrderDetails"
                 }
             }
         }

@@ -1,14 +1,13 @@
-sap.ui.define(
-    [
-        "sap/ui/core/mvc/Controller"
-    ],
-    function(BaseController) {
-      "use strict";
-  
-      return BaseController.extend("dffspaceEmp.employee.controller.App", {
-        onInit() {
-        }
-      });
-    }
-  );
+// @ts-nocheck
+sap.ui.define([
+  "sap/ui/core/mvc/Controller"
+], function (Controller) {
+
+  return Controller.extend("dffspaceEmp.employee.controller.App", {
+
+      onInit: function () {
+
+      }
+  });
+});   
   
