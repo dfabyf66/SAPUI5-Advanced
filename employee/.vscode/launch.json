@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "employee-config1",
+      "name": "Run Employee",
       "cwd": "${workspaceFolder}",
       "runtimeArgs": [
         "fiori",
@@ -23,7 +23,7 @@
       "outputCapture": "std",
       "env": {
         "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/logali/employee\"}",
-        "FIORI_TOOLS_BACKEND_CONFIG": "[{\"destination\":\"DFFERP\",\"path\":\"/sap/opu/odata\"},{\"destination\":\"Northwind\",\"path\":\"/V2\"}]",
+        "FIORI_TOOLS_BACKEND_CONFIG": "[{\"destination\":\"DFFERP\",\"path\":\"/sap/opu/odata\"},{\"destination\":\"Northwind\",\"path\":\"/V2\"},{\"destination\":\"DFFERR\",\"path\":\"/sap/opu/odata\"}]",
         "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
         "FIORI_TOOLS_UI5_VERSION": "",
         "FIORI_TOOLS_UI5_URI": "https://ui5.sap.com"
