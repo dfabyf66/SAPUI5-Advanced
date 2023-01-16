@@ -1,14 +1,16 @@
 
 
 sap.ui.define([
-    "sap/ui/core/mvc/Controller",
+    "dffspaceEmp/employee/controller/Base.controller",
     "sap/ui/model/Filter",
     "sap/ui/model/FilterOperator",
 ],
     /**
      * @param {typeof sap.ui.core.mvc.Controller} Controller
+     * @param {typeof sap.ui.model.Filter} Filter
+     * @param {typeof sap.ui.model.FilterOperator} FilterOperator
      */
-    function (Controller, Filter, FilterOperator) {
+    function (Base, Filter, FilterOperator) {
         "use strict";
 
         function onInit() {
@@ -95,15 +97,15 @@ sap.ui.define([
 
 
 
-        function toOrderDetails(oEvent) {
-            var orderID = oEvent.getSource().getBindingContext("odataNorthwind").getObject().OrderID;
-            var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-            oRouter.navTo("RouteOrderDetails", {
-                OrderID : orderID
-            });
-        };
+        // function toOrderDetails(oEvent) {
+        //     var orderID = oEvent.getSource().getBindingContext("odataNorthwind").getObject().OrderID;
+        //     var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+        //     oRouter.navTo("RouteOrderDetails", {
+        //         OrderID : orderID
+        //     });
+        // };
         
-        var Main = Controller.extend("dffspaceEmp.employee.controller.MasterEmployee", {});
+        var Main = Base.extend("dffspaceEmp.employee.controller.MasterEmployee", {});
 
         // Main.prototype.onValidate = function () {
         //     var inputEmployee = this.byId("inputEmployee");
@@ -129,7 +131,7 @@ sap.ui.define([
         Main.prototype.showOrders = showOrders;
         Main.prototype.onCloseOrders = onCloseOrders;
         Main.prototype.showEmployee = showEmployee;
-        Main.prototype.toOrderDetails = toOrderDetails;
+       // Main.prototype.toOrderDetails = toOrderDetails;
         
         return Main;
         // });
