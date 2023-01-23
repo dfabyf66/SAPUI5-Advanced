@@ -1,7 +1,7 @@
 {
     "_version": "1.48.0",
     "sap.app": {
-        "id": "dffspaceEmp.employee",
+        "id": "employee",
         "type": "application",
         "i18n": "i18n/i18n.properties",
         "applicationVersion": {
@@ -17,7 +17,7 @@
         },
         "dataSources": {
             "Northwind.svc": {
-                "uri": "/V2/Northwind/Northwind.svc/",
+                "uri": "v2/Northwind/Northwind.svc/",
                 "type": "OData",
                 "settings": {
                     "annotations": [],
@@ -27,7 +27,7 @@
             },
 
             "YSAPUI5_SRV_01": {
-                "uri": "/sap/opu/odata/sap/YSAPUI5_SRV_01/",
+                "uri": "sap/opu/odata/sap/YSAPUI5_SRV_01",
                 "type": "OData",
                 "settings": {
                     "odataVersion": "2.0",
@@ -107,6 +107,8 @@
                     "defaultUpdateMethod": "Put"
                 }
             }
+            
+           
         },
         "resources": {
             "css": [
@@ -156,9 +158,5 @@
                 }
             }
         }
-    },
-    "sap.cloud": {
-        "public": true,
-        "service": "dffspaceEmp-employee"
     }
 }
