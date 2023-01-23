@@ -1,5 +1,4 @@
-
-
+// @ts-nocheck
 sap.ui.define([
     "dffspaceEmp/employee/controller/Base.controller",
     "sap/ui/model/Filter",
@@ -94,34 +93,9 @@ sap.ui.define([
             var path = oEvent.getSource().getBindingContext("odataNorthwind").getPath();
             this._bus.publish("flexible", "showEmployee", path);
         };
-
-
-
-        // function toOrderDetails(oEvent) {
-        //     var orderID = oEvent.getSource().getBindingContext("odataNorthwind").getObject().OrderID;
-        //     var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-        //     oRouter.navTo("RouteOrderDetails", {
-        //         OrderID : orderID
-        //     });
-        // };
-        
+       
         var Main = Base.extend("dffspaceEmp.employee.controller.MasterEmployee", {});
-
-        // Main.prototype.onValidate = function () {
-        //     var inputEmployee = this.byId("inputEmployee");
-        //     var valueEmployee = inputEmployee.getValue();
-
-        //     if (valueEmployee.length === 6) {
-        //         // inputEmployee.setDescription("OK");
-        //         this.getView().byId("labelCountry").setVisible(true);
-        //         this.getView().byId("slCountry").setVisible(true);
-        //     } else {
-        //         // inputEmployee.setDescription("Not OK");
-        //         this.getView().byId("labelCountry").setVisible(false);
-        //         this.getView().byId("slCountry").setVisible(false);
-        //     }
-        // };
-
+       
         Main.prototype.onInit = onInit;
         Main.prototype.onFilter = onFilter;
         Main.prototype.onClearFilter = onClearFilter;

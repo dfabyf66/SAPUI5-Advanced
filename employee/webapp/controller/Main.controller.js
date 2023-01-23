@@ -1,3 +1,4 @@
+// @ts-nocheck
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
     "sap/m/MessageBox"
@@ -8,7 +9,6 @@ sap.ui.define([
         onBeforeRendering: function () {
             this._detailEmployeeView = this.getView().byId("detailEmployeeView");
         },
-
 
         onInit: function () {
 
@@ -160,12 +160,6 @@ sap.ui.define([
                 error: function (e) {
                 }
             });
-
-
         }
-
-
-
-
     });
 }); 
